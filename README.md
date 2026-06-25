@@ -5,8 +5,7 @@
 ## 📑 Table of Contents
 * [Project Overview](#-project-overview)
 * [Data Sources & Architecture](#-data-sources—architecture)
-* [DAX Calculation](#-DAX-Calculation)
-* [Calculated Measeure](#-Calculated-Measeure)
+* [Calculation](#-Calculation)
 * [Data Visualization](#-Dat-Visualization)
 * [Key Insights](#-key-insights)
 * [How To Use](#-how-to-use)
@@ -25,5 +24,28 @@
   
 * **Storage Mode:** Specify if using Import, Direct Query, or Composite mode.
 
-## ⚙️ DAX Calculation
+## ⚙️ Calculation
+* Calculation done as per the business requirement. one of the example calculation shown below,
+```dax
+YTD Sales = TOTALYTD(SUM('Order Details'[Amount]),'Order Details'[Order Date],'Order Details'[Order Date])
+```
+## ⚙️ Data Visualization
+* Visualization done as per the business requirement. sample visualization shown below,
+  
+  <img width="741" height="472" alt="Max Profit Margin " src="https://github.com/user-attachments/assets/74a3ad56-fb80-4bfd-8488-85939b0b1d93" />
+
+  ## 💡 Key Insights
+  
+* **Trend A:** First major business finding or behavior pattern identified.
+* **Trend B:** Actionable performance anomaly noted in the data.
+* **Recommendation:** Direct business action suggested based on the metrics.
+
+  ## 🚀 How To Use
+1. **Prerequisites:** Ensure you have the latest Power BI Desktop installed.
+2. **File Formats:** Clone the repository to access the `.pbix` or `.pbit` file.
+3. **Data Refresh:** Change the source path under **Data Source Settings** to point to your data files.
+
+
+
+
 
